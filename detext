@@ -1,0 +1,88 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local s = Instance.new("ScreenGui")
+local login = Instance.new("Frame")
+local redtoppart = Instance.new("Frame")
+local password = Instance.new("TextBox")
+local Login = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
+
+--Properties:
+
+s.Name = "s"
+s.Parent = game.CoreGui
+login.Name = "login"
+login.Parent = s
+login.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+login.BorderColor3 = Color3.fromRGB(43, 43, 43)
+login.BorderSizePixel = 6
+login.Position = UDim2.new(0.392597497, 0, 0.368421078, 0)
+login.Size = UDim2.new(0, 324, 0, 225)
+
+redtoppart.Name = "red top part"
+redtoppart.Parent = login
+redtoppart.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+redtoppart.Size = UDim2.new(0, 324, 0, 1)
+
+password.Name = "password"
+password.Parent = login
+password.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+password.BorderSizePixel = 0
+password.Position = UDim2.new(0.246913612, 0, 0.275555551, 0)
+password.Size = UDim2.new(0, 164, 0, 27)
+password.Font = Enum.Font.SourceSans
+password.PlaceholderText = "insert password"
+password.Text = ""
+password.TextColor3 = Color3.fromRGB(255, 255, 255)
+password.TextSize = 14.000
+
+Login.Name = "Login"
+Login.Parent = login
+Login.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Login.BorderSizePixel = 0
+Login.Position = UDim2.new(0.358024716, 0, 0.528888881, 0)
+Login.Size = UDim2.new(0, 93, 0, 28)
+Login.Font = Enum.Font.SourceSans
+Login.Text = "Login"
+Login.TextColor3 = Color3.fromRGB(255, 255, 255)
+Login.TextSize = 14.000
+
+Exit.Name = "Exit"
+Exit.Parent = login
+Exit.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.354938298, 0, 0.715555549, 0)
+Exit.Size = UDim2.new(0, 93, 0, 28)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "Exit"
+Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exit.TextSize = 14.000
+
+-- Scripts:
+
+local function THGUZ_fake_script() -- Login.LocalScript 
+	local script = Instance.new('LocalScript', Login)
+
+	local password = script.Parent.Parent.password
+	local login = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if password.Text == "test" or
+			password.Text == "fat" then
+			login.Visible = false
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/anaccountofstuff/asdf/main/pf'))()
+		end
+	end)
+end
+coroutine.wrap(THGUZ_fake_script)()
+local function KLCAYSR_fake_script() -- Exit.LocalScript 
+	local script = Instance.new('LocalScript', Exit)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible=false
+	end)
+end
+coroutine.wrap(KLCAYSR_fake_script)()
