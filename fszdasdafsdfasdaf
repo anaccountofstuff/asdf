@@ -1,0 +1,71 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local s = Instance.new("ScreenGui")
+local login = Instance.new("Frame")
+local redtoppart = Instance.new("Frame")
+local NEXUS = Instance.new("TextButton")
+local BEEGO = Instance.new("TextButton")
+
+--Properties:
+
+s.Name = "s"
+s.Parent = game.CoreGui
+
+login.Name = "login"
+login.Parent = s
+login.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+login.BorderColor3 = Color3.fromRGB(43, 43, 43)
+login.BorderSizePixel = 6
+login.Position = UDim2.new(0.344933033, 0, 0.332865506, 0)
+login.Size = UDim2.new(0, 324, 0, 225)
+
+redtoppart.Name = "red top part"
+redtoppart.Parent = login
+redtoppart.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+redtoppart.Size = UDim2.new(0, 324, 0, 1)
+
+NEXUS.Name = "NEXUS"
+NEXUS.Parent = login
+NEXUS.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+NEXUS.BorderSizePixel = 0
+NEXUS.Position = UDim2.new(0.0462962985, 0, 0.164444447, 0)
+NEXUS.Size = UDim2.new(0, 110, 0, 151)
+NEXUS.Font = Enum.Font.SourceSans
+NEXUS.Text = "Nexus crack"
+NEXUS.TextColor3 = Color3.fromRGB(255, 255, 255)
+NEXUS.TextSize = 14.000
+
+BEEGO.Name = "BEEGO"
+BEEGO.Parent = login
+BEEGO.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+BEEGO.BorderSizePixel = 0
+BEEGO.Position = UDim2.new(0.604938269, 0, 0.164444447, 0)
+BEEGO.Size = UDim2.new(0, 110, 0, 151)
+BEEGO.Font = Enum.Font.SourceSans
+BEEGO.Text = "Beego"
+BEEGO.TextColor3 = Color3.fromRGB(255, 255, 255)
+BEEGO.TextSize = 14.000
+
+-- Scripts:
+
+local function VAUMX_fake_script() -- NEXUS.LocalScript 
+	local script = Instance.new('LocalScript', NEXUS)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/anaccountofstuff/asdf/main/nexus%20crack'))()
+	end)
+end
+coroutine.wrap(VAUMX_fake_script)()
+local function GOBLE_fake_script() -- BEEGO.LocalScript 
+	local script = Instance.new('LocalScript', BEEGO)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/anaccountofstuff/asdf/main/pf'))()
+	end)
+end
+coroutine.wrap(GOBLE_fake_script)()
