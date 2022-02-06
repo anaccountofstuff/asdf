@@ -73,7 +73,7 @@ local function THGUZ_fake_script() -- Login.LocalScript
 		if password.Text == "test" or
 			password.Text == "fat" then
 			login.Visible = false
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/anaccountofstuff/asdf/main/pf'))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/anaccountofstuff/asdf/main/fszdasdafsdfasdaf'))()
 		end
 	end)
 end
