@@ -19,7 +19,7 @@ login.Parent = s
 login.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 login.BorderColor3 = Color3.fromRGB(43, 43, 43)
 login.BorderSizePixel = 6
-login.Position = UDim2.new(0.344933033, 0, 0.332865506, 0)
+login.Position = UDim2.new(0.393000007, 0, 0.368000001, 0)
 login.Size = UDim2.new(0, 324, 0, 225)
 
 redtoppart.Name = "red top part"
@@ -51,21 +51,25 @@ BEEGO.TextSize = 14.000
 
 -- Scripts:
 
-local function VAUMX_fake_script() -- NEXUS.LocalScript 
+local function AUGW_fake_script() -- NEXUS.LocalScript 
 	local script = Instance.new('LocalScript', NEXUS)
 
+	local login = script.Parent.Parent
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/anaccountofstuff/asdf/main/nexus%20crack'))()
+		login.visible = false
 	end)
 end
-coroutine.wrap(VAUMX_fake_script)()
-local function GOBLE_fake_script() -- BEEGO.LocalScript 
+coroutine.wrap(AUGW_fake_script)()
+local function OBAYO_fake_script() -- BEEGO.LocalScript 
 	local script = Instance.new('LocalScript', BEEGO)
 
+	local login = script.Parent.Parent
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/anaccountofstuff/asdf/main/pf'))()
+		login.visible = false
 	end)
 end
-coroutine.wrap(GOBLE_fake_script)()
+coroutine.wrap(OBAYO_fake_script)()
