@@ -6,6 +6,7 @@
 local s = Instance.new("ScreenGui")
 local login = Instance.new("Frame")
 local redtoppart = Instance.new("Frame")
+local Exit = Instance.new("TextButton")
 local NEXUS = Instance.new("TextButton")
 local BEEGO = Instance.new("TextButton")
 
@@ -27,11 +28,22 @@ redtoppart.Parent = login
 redtoppart.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 redtoppart.Size = UDim2.new(0, 324, 0, 1)
 
+Exit.Name = "Exit"
+Exit.Parent = redtoppart
+Exit.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.354938298, 0, 187.715561, 0)
+Exit.Size = UDim2.new(0, 93, 0, 28)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "Exit"
+Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exit.TextSize = 14.000
+
 NEXUS.Name = "NEXUS"
 NEXUS.Parent = login
 NEXUS.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 NEXUS.BorderSizePixel = 0
-NEXUS.Position = UDim2.new(0.0462962985, 0, 0.164444447, 0)
+NEXUS.Position = UDim2.new(0.0432098806, 0, 0.102222219, 0)
 NEXUS.Size = UDim2.new(0, 110, 0, 151)
 NEXUS.Font = Enum.Font.SourceSans
 NEXUS.Text = "Nexus crack"
@@ -42,7 +54,7 @@ BEEGO.Name = "BEEGO"
 BEEGO.Parent = login
 BEEGO.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 BEEGO.BorderSizePixel = 0
-BEEGO.Position = UDim2.new(0.604938269, 0, 0.164444447, 0)
+BEEGO.Position = UDim2.new(0.611111104, 0, 0.102222219, 0)
 BEEGO.Size = UDim2.new(0, 110, 0, 151)
 BEEGO.Font = Enum.Font.SourceSans
 BEEGO.Text = "Beego"
@@ -51,25 +63,33 @@ BEEGO.TextSize = 14.000
 
 -- Scripts:
 
-local function AUGW_fake_script() -- NEXUS.LocalScript 
+local function JKKO_fake_script() -- Exit.LocalScript 
+	local script = Instance.new('LocalScript', Exit)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible=false
+	end)
+end
+coroutine.wrap(JKKO_fake_script)()
+local function TLXUJJ_fake_script() -- NEXUS.LocalScript 
 	local script = Instance.new('LocalScript', NEXUS)
 
-	local login = script.Parent.Parent
+	local main = script.Parent.Parent
 	
 	script.Parent.MouseButton1Click:Connect(function()
+		main.visible = false then
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/anaccountofstuff/asdf/main/nexus%20crack'))()
-		login.visible = false
 	end)
 end
-coroutine.wrap(AUGW_fake_script)()
-local function OBAYO_fake_script() -- BEEGO.LocalScript 
+coroutine.wrap(TLXUJJ_fake_script)()
+local function QCTSB_fake_script() -- BEEGO.LocalScript 
 	local script = Instance.new('LocalScript', BEEGO)
 
-	local login = script.Parent.Parent
+	local main = script.Parent.Parent
 	
 	script.Parent.MouseButton1Click:Connect(function()
+		main.visible = false then
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/anaccountofstuff/asdf/main/pf'))()
-		login.visible = false
 	end)
 end
-coroutine.wrap(OBAYO_fake_script)()
+coroutine.wrap(QCTSB_fake_script)()
