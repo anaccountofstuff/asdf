@@ -943,7 +943,7 @@ MiscW:Label('Dark Hub Devs For UI Lib')
 print("cock - the#1640")
 end
 
-if game.PlaceId == 292439477 then
+if game.PlaceId ==  then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/anaccountofstuff/asdf/main/detext'))()
 end
 if game.PlaceId == 301549746 then -- FAT STOP HERE
